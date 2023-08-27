@@ -7,6 +7,9 @@ import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import AdminLogin from "./components/AdminLogin";
+import AdminProfile from "./components/AdminProfile";
+import AllSellers from "./components/AllSellers";
 
 
 function App() {
@@ -21,7 +24,9 @@ function App() {
        
       
         <Routes>
-         
+        <Route path="/alogin" element={<AdminLogin />} />
+        <Route path="/aprofile" element={<AdminProfile />} />
+        <Route path="/sellers" element={<AllSellers />} />
         </Routes>
         <ToastContainer />
       </BrowserRouter>
