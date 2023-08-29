@@ -10,6 +10,9 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import AdminLogin from "./components/AdminLogin";
 import AdminProfile from "./components/AdminProfile";
 import AllSellers from "./components/AllSellers";
+import CustomerLogin from "./components/CustomerLogin";
+import CustomerProfile from "./components/CustomerProfile";
+import RegCustomer from "./components/RegCustomer";
 
 
 function App() {
@@ -27,6 +30,10 @@ function App() {
         <Route path="/alogin" element={<AdminLogin />} />
         <Route path="/aprofile" element={<AdminProfile />} />
         <Route path="/sellers" element={<AllSellers />} />
+        <Route path="/clogin" element={<CustomerLogin />} />
+        <Route path="/cprofile" element={<CustomerProfile />} />
+        <Route path="/customers" element={<AllCustomers />} />
+        <Route path="/register" element={<RegCustomer />} />
         </Routes>
         <ToastContainer />
       </BrowserRouter>
