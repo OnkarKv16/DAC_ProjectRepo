@@ -65,7 +65,7 @@ function AllCustomers(){
                         <td>
                     
                              <button
-                                onClick={() => deleteCustomer(x.id)}
+                               // onClick={() => deleteCustomer(x.id)}
                                 className="btn btn-danger btn-sm"
                              >
                              Delete

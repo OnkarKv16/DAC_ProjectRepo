@@ -102,32 +102,6 @@
        
 //       </table>
 //       {/* Pagination */}
-//       <div className="pagination text-center">
-//         <button
-//           onClick={prevPage}
-//           disabled={currentPage === 1}
-//           className="pagination-btn mr-2"
-//         >
-//           Prev
-//         </button>
-//         <li class="page-item active" aria-current="page">
-//       <a class="page-link" href="#">Page {currentPage} of {Math.ceil(sellers.length / sellersPerPage)}</a>
-//             </li>
-//         <button
-//           onClick={nextPage}
-//           disabled={currentPage === Math.ceil(sellers.length / sellersPerPage)}
-//           className="pagination-btn ml-2"
-//         >
-//           Next
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default AllSellers;
-
-
 
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -169,11 +143,11 @@ function AllSellers() {
     }
   };
 
-  // const editSeller = (id) => {
-  //   let response = window.confirm("Are you sure you want to edit this supplier?");
-  //   if (response) {
-  //   }
-  // };
+  const editSeller = (id) => {
+    let response = window.confirm("Are you sure you want to edit this supplier?");
+    if (response) {
+    }
+  };
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
@@ -292,7 +266,7 @@ function AllSellers() {
                     </button> */}
                     <tr></tr>
                     <button
-                      onClick={() => deleteSeller(x.id)}
+                     // onClick={() => deleteSeller(x.id)}
                       className="btn btn-danger btn-sm"
                     >
                       Delete
